@@ -21,7 +21,7 @@ int main()
 		cout << left << setw(8) << *it;
 	}
 	cout << endl;
-	//另一只遍历
+	//另一种遍历
 	for (double & i : number) {
 		cout << i;
 	}
