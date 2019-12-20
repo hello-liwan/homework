@@ -5,10 +5,7 @@
 using namespace std;
 int main()
 {
-	int n = 10;
-	int* a;
-	a = new int[n];
-	vector<double> number(10, 1);
+	vector<double> number={12,54,2,84,1,154,65};
 	vector<double>::iterator it;
 	number.push_back(20);
 	sort(number.begin(), number.end());
@@ -24,6 +21,7 @@ int main()
 		cout << left << setw(8) << *it;
 	}
 	cout << endl;
+	//另一只遍历
 	for (double & i : number) {
 		cout << i;
 	}
