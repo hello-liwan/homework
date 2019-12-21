@@ -91,10 +91,3 @@ void Delete(struct student* hand)
 	delete->next = delete->next->next;
 	free(temp);
 }
-
-
-
-
-
-
-
