@@ -31,10 +31,16 @@ public class Graduate extends Student {
     @Override
     public String toString() {
         return "Graduate{" +
-                super.toString()
-                + computerAveScore()
-                + computerAveScore()
-                +"}";
+                "学号='" + getId() + '\'' +
+                ", 姓名='" + getName() + '\'' +
+                ", 性别='" + getSex() + '\'' +
+                ", 年龄='" + getAge() + '\'' +
+                ", 计算机成绩=" + getComputerScore() +
+                ", 英语成绩=" + getEnglishScore() +
+                ", 数学成绩=" + getMathScore() +
+                ", 总成绩=" + computerTotalScore() + '\'' +
+                ",平均成绩=" + computerAveScore() + '\'' +
+                '}';
     }
 
     public String getTutor() {

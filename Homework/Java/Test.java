@@ -25,10 +25,46 @@ public class Test {
 
         /*
         实验7
-         */
         Undergraduate undergraduate = new Undergraduate("0001", "张三", "男", 20, "2121");
         Graduate graduate = new Graduate("1001", "李四", "女", 24, "王五");
         System.out.println(undergraduate.toString());
         System.out.println(graduate.toString());
+        */
+         /*
+         实验8
+          */
+        Student undergraduate = new Undergraduate("0001","张三","男",21,"软件1171");
+        Student graduate = new Graduate("1001","李四","女",24,"王五");
+        Student[] student = new Student[]{undergraduate, graduate};
+        for (Student temp : student) {
+            if(temp instanceof Undergraduate){
+                System.out.println("Undergraduatr：" + temp.toString());
+            }else {
+                System.out.println("Graduate:" + temp.toString());
+            }
+        }
+        /*实验8 编程题*/
+        Shape[] shape = new Shape[9];
+        for (int i = 0; i < 9; i++) {
+            int j = (int)(Math.random() * 4) ;
+            System.out.println(j);
+            switch (j){
+                case 0:
+                    shape[i] = new Circle();
+                    break;
+                case 1:
+                    shape[i] = new Oval();
+                    break;
+                case 2:
+                    shape[i] = new Square();
+                    break;
+                case 3:
+                    shape[i] = new Triangle();
+                    break;
+            }
+        }
+        for (Shape shape1 : shape) {
+            shape1.Draw();
+        }
     }
 }
