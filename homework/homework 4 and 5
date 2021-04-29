@@ -1,0 +1,160 @@
+作业4面向对象的高级编程
+一．	选择题（从每题A、B	、C、D四个选项中选择一个符合条件的正确选项）
+1.	下面关于类的继承性的描述中，错误的是（     ）。
+A.	继承是在已有的基础上生成新类的一种方法
+B.	Java语言要求一个子类只有一个父类
+C.	父类中成员的访问权限在子类中将被改变
+D.	子类继承父类的所有成员，但不包括私有的成员方法
+2.	接口中的成员变量被隐含地声明为（	）。
+A.	public static final 
+B.	public final 
+C.	public static 
+D.	public abstract
+3.	下面关于接口的描述中，错误的是（	）。
+A.	一个类只允许实现一个接口。
+B.	定义接口使用的关键字是interface。
+C.	在实现接口的类中通常要给出接口中定义的抽象方法的具体实现。
+D.	接口实际上是由常量和抽象方法构成的特殊类。
+4.	   下列关于静态方法的描述中， 错误的是(		)。
+A．	在类体内说明静态方法使用关键字static。
+B．	静态方法只能处理静态变量(局部变量)或调用静态方法。
+C．	静态方法不占用对象的内存空间，非静态方法占用对象的内存空间。
+D．	静态方法只能用类名调用。
+5.	   下列关于抽象类的描述中， 错误的是(  		)。
+A．	抽象类是用修饰符abstract说明的。
+B．	抽象类是不可以定义对象的。
+C．	抽象类是不可以有构造方法的。
+D．	抽象类通常要有它的子类。
+6.	已知： 
+interface I {
+int CONST = 3;
+void m(int i);
+}
+class C implements I {
+public static void main(String[] args) {
+int x = 5;
+new C().m(++x); 
+}
+public void m(int i) {
+System.out.println(CONST + i);
+}
+}
+则输出为（	 ）。
+A.	8 
+B.	9 
+C.	编译错误 
+D.	运行时异常
+7.	已知： 
+class Animal { 
+public abstract String noise(); 
+} 
+class Dog extends Animal { 
+public String noise() { return “wang wang”;} 
+} 
+class Cat extends Animal { 
+public String noise() { return “miao miao”; } 
+} 
+class C { 
+public static void main(String[] args) { 
+Cat c = new Cat(); 
+System.out.println(c.noise()); 
+} 
+} 
+的输出为（		）。 
+A.	wang wang 
+B.	maio miao 
+C.	编译错误 
+D.	运行时异常
+二．分析程序输出结果题
+1	 Execcise4_1.java
+class A {
+
+    A() {
+        System.out.println("class A");
+    }
+}
+
+class B extends A {
+
+    int b;
+
+B(int i) {
+Super();
+        b = i;
+    }
+}
+
+class C extends B {
+    private int c;
+
+    C(int i, int j) {
+        super(j);
+        c = i;
+    }
+
+    int returnc() {
+        return c;
+    }
+}
+
+public class Exercise4_1 {
+
+    public static void main(String[] args) {
+        C c = new C(5, 18);
+        System.out.println("c: " + c.b * c.returnc());
+    }
+}
+
+2	Exercise4_2.java
+class A {
+    void go() {
+        System.out.println("class  A");
+    }
+}
+
+class B extends A {
+void go() {
+	super.go();
+        System.out.println("class  B");
+    }
+}
+
+public class Exercise4_4 {
+
+    public static void main(String args[]) {
+        A a = new A();
+        A b = new B();
+        a.go();
+        b.go();
+    }
+}
+3	Exercise4_3.java
+class Art {
+
+    Art() {
+        System.out.println("Art constructor");
+    }
+}
+
+class Drawing extends Art {
+
+Drawing() {
+Super();
+        System.out.println("Drawing constructor");
+    }
+}
+
+class Cartoon extends Drawing {
+}
+
+public class Exercise4_6 {
+
+    public static void main(String args[]) {
+        new Cartoon();
+    }
+}
+
+
+作业5
+	实验七（或者实验八编程题一）的学生信息管理系统的最终程序的完整源代码和运行结果截图，包括Student类，Undergraduate类，Graduate类和Test类。
+ 
