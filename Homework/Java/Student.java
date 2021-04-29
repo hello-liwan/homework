@@ -34,21 +34,6 @@ public class Student {
         return (ComputerScore + EnglishScore + MathScore) / 3.0;
     }
 
-    /*
-    实验5
-    @Override
-    public String toString() {
-        return "Student{" +
-                "学号='" + id + '\'' +
-                ", 姓名='" + name + '\'' +
-                ", 性别='" + sex + '\'' +
-                ", 年龄=" + age + '\'' +
-                ", 总成绩=" + computerTotalScore() + '\'' +
-                ",平均成绩=" + computerAveScore() + '\'' +
-                '}';
-    }
-    */
-
     @Override
     public String toString() {
         return "Student{" +
