@@ -34,9 +34,9 @@ public class Test {
          实验8
           */
         Student undergraduate = new Undergraduate("0001","张三","男",21,"软件1171");
-        scan.setsocre(undergraduate);
+        Scan.setsocre(undergraduate);
         Student graduate = new Graduate("1001","李四","女",24,"王五");
-        scan.setsocre(graduate);
+        Scan.setsocre(graduate);
         Student[] student = new Student[]{undergraduate, graduate};
         for (Student temp : student) {
             if(temp instanceof Undergraduate){
