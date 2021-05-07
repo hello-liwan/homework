@@ -79,7 +79,7 @@ class B extends A {
     int b;
 
 B(int i) {
-Super();
+super();
         b = i;
     }
 }
@@ -105,6 +105,10 @@ public class Exercise4_1 {
     }
 }
 
+输出：
+class A
+c: 90
+
 2	Exercise4_2.java
 class A {
     void go() {
@@ -128,6 +132,12 @@ public class Exercise4_4 {
         b.go();
     }
 }
+
+输出：
+class  A
+class  A
+class  B
+
 3	Exercise4_3.java
 class Art {
 
@@ -139,7 +149,7 @@ class Art {
 class Drawing extends Art {
 
 Drawing() {
-Super();
+super();
         System.out.println("Drawing constructor");
     }
 }
@@ -154,6 +164,9 @@ public class Exercise4_6 {
     }
 }
 
+输出：
+Art constructor
+Drawing constructor
 
 作业5
 实验七（或者实验八编程题一）的学生信息管理系统的最终程序的完整源代码和运行结果截图，包括Student类，Undergraduate类，Graduate类和Test类。
