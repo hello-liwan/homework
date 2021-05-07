@@ -32,7 +32,6 @@ public class Test {
         */
          /*
          实验8
-          */
         Student undergraduate = new Undergraduate("0001","张三","男",21,"软件1171");
         Scan.setsocre(undergraduate);
         Student graduate = new Graduate("1001","李四","女",24,"王五");
@@ -45,7 +44,9 @@ public class Test {
                 System.out.println("Graduate:" + temp.toString());
             }
         }
-        /*实验8 编程题*/
+        */
+
+        /*实验8 编程题
         Shape[] shape = new Shape[9];
         for (int i = 0; i < 9; i++) {
             int j = (int)(Math.random() * 4) ;
@@ -68,5 +69,10 @@ public class Test {
         for (Shape shape1 : shape) {
             shape1.Draw();
         }
+        */
+        /*实验9*/
+        Exception.ArrayIndexOutOfBounds();
+        Exception.Arithmetice();
+        Exception.Circle();
     }
 }
