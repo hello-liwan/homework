@@ -60,7 +60,7 @@ Cat c = new Cat();
 System.out.println(c.noise()); 
 } 
 } 
-的输出为（     B	）。 
+的输出为（     C	）。 
 A.	wang wang 
 B.	maio miao 
 C.	编译错误 
