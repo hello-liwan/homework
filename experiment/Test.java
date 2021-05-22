@@ -1,7 +1,8 @@
-import javax.swing.*;
+import java.io.File;
+import java.io.IOException;
 
 public class Test {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         /*
         实验5
         Student student = new Student();
@@ -29,7 +30,7 @@ public class Test {
         Graduate graduate = new Graduate("1001", "李四", "女", 24, "王五");
         System.out.println(undergraduate.toString());
         System.out.println(graduate.toString());
-        */
+//        */
          /*
          实验8
         Student undergraduate = new Undergraduate("0001","张三","男",21,"软件1171");
@@ -44,7 +45,7 @@ public class Test {
                 System.out.println("Graduate:" + temp.toString());
             }
         }
-        */
+
 
         /*实验8 编程题
         Shape[] shape = new Shape[9];
@@ -69,10 +70,35 @@ public class Test {
         for (Shape shape1 : shape) {
             shape1.Draw();
         }
-        */
-        /*实验9*/
+
+        /*实验9
         Exception.ArrayIndexOutOfBounds();
         Exception.Arithmetice();
-        Exception.Circle();
+        Exception.Circle();*/
+        /*实验10
+//        ThreadDemo t1 = new ThreadDemo();
+//        ThreadDemo t2 = new ThreadDemo();
+//        t1.start();
+//        t2.start();
+//        Thread t3 = new Thread(new RunableDemo());
+//        Thread t4 = new Thread(new RunableDemo());
+//        t3.start();
+//        t4.start();
+        ThreadDemo t1 = new ThreadDemo();
+        Thread t2 = new Thread(new RunableDemo());
+        t1.start();
+        t2.start();
+        */
+
+
+        /*实验十一
+         */
+        FileInOutputStream.copyStream();
+        FileInOutputStream.copyRead();
+        FileInOutputStream.buffCopyStream();
+        FileInOutputStream.buffCopyRead();
+        FileInOutputStream.studnetInformation();
+        FileInOutputStream.nineNine();
     }
 }
+
