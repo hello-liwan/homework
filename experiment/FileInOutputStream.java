@@ -3,6 +3,7 @@ import java.util.Currency;
 import java.util.Scanner;
 
 public class FileInOutputStream {
+
     public static void copyStream() throws IOException {
         FileInputStream in = new FileInputStream("temp/a.txt");
         FileOutputStream out = new FileOutputStream("temp/b.txt");

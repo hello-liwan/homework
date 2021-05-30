@@ -1,4 +1,5 @@
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.IOException;
 
 public class Test {
@@ -93,12 +94,13 @@ public class Test {
 
         /*实验十一
          */
-        FileInOutputStream.copyStream();
-        FileInOutputStream.copyRead();
-        FileInOutputStream.buffCopyStream();
-        FileInOutputStream.buffCopyRead();
-        FileInOutputStream.studnetInformation();
-        FileInOutputStream.nineNine();
+//        FileInOutputStream.copyStream();
+//        FileInOutputStream.copyRead();
+//        FileInOutputStream.buffCopyStream();
+//        FileInOutputStream.buffCopyRead();
+//        FileInOutputStream.studnetInformation();
+//        FileInOutputStream.nineNine();
+        FileApp.FileAppDemo();
     }
 }
 
